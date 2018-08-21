@@ -6,6 +6,7 @@ RUN apt install python python-pip -y
 RUN mkdir /app
 COPY src/main.py /app
 COPY requirements.txt /app
+
 RUN pip install -r /app/requirements.txt
 COPY docker-entrypoint.sh /app
 

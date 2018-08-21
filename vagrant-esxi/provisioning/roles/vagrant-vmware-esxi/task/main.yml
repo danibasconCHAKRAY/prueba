@@ -1,0 +1,4 @@
+---
+- name: Install vagrant-vmware-esxi
+  shell: vagrant plugin install vagrant-vmware-esxi
+

@@ -12,7 +12,7 @@
                     - always
 
   roles:
-#          - geerlingguy.repo-epel
+          - geerlingguy.repo-epel
 #          - geerlingguy.jenkins
 #          - geerlingguy.git
 #          - tecris.maven
@@ -20,5 +20,5 @@
 #          - ansible-role-vagrant
 #          - ansible-role-ruby
 #          - vagrant-vmware-esxi
-          - ansible-role-docker
+#          - ansible-role-docker
 #          - ansible-role-pip

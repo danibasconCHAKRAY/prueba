@@ -23,7 +23,7 @@ To start the vagrant box run:
 
     vagrant up
 
-To log in to the machine run:
+To log in to the machine run:  
 
     vagrant ssh
 

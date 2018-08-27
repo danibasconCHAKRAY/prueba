@@ -12,7 +12,7 @@
 #python src/main.py &
 
 #echo "Realizando los test"
-#cd test/ ; pytest ; cd ../
+#cd src/ ; pytest ; cd ../
 
 #echo "Construyendo imagen"
 #docker build -t apptest:lastest .

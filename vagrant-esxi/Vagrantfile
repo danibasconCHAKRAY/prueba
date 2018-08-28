@@ -49,9 +49,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    config.vm.hostname = "prueba"
    prueba.vm.synced_folder('.', '/Vagrantfiles', type: 'rsync')
    prueba.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
-   prueba.vm.network :private_network, ip: "172.16.10.131"
+   prueba.vm.network :private_network, ip: "172.16.10.132"
    prueba.vm.provider :esxi do |lb|
-       lb.memory = 2048
+       lb.memory = 1024
    end
  end
 
@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #esxi.guest_memsize = '4096'
     #esxi.guest_numvcpus = '2'
   end
-  config.vm.provision :shell,
-    :keep_color => true,
-    :path => "setup.sh"
+#  config.vm.provision :shell,
+#    :keep_color => true,
+#    :path => "setup.sh"
 end

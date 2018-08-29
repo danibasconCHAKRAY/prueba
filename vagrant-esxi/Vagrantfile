@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #esxi.guest_memsize = '4096'
     #esxi.guest_numvcpus = '2'
   end
-#  config.vm.provision :shell,
-#    :keep_color => true,
-#    :path => "setup.sh"
+  config.vm.provision :shell,
+    :keep_color => true,
+    :path => "setup.sh"
 end
